@@ -1,6 +1,5 @@
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -13,32 +12,24 @@ body {
   margin: auto;
 }
 
-.header {
+.navbar {
   background-color: #ffffff;
 }
 
-.header-top {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.navbar-top {
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   padding-top: 40px;
   padding-bottom: 40px;
 }
 
-.header__search {
+.navbar__search {
   margin-right: auto;
   margin-left: 108px;
 }
 
 .search {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
   overflow: hidden;
@@ -69,12 +60,8 @@ body {
 }
 
 .user {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-decoration: none;
 }
 
@@ -82,8 +69,7 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .user__name {
@@ -139,8 +125,7 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
@@ -177,8 +162,7 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -325,8 +309,7 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   color: inherit;
   /* 2 */
@@ -360,8 +343,7 @@ textarea {
  */
 [type="checkbox"],
 [type="radio"] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */
@@ -435,4 +417,3 @@ template {
 [hidden] {
   display: none;
 }
-/*# sourceMappingURL=style.css.map */
