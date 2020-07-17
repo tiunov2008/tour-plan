@@ -624,8 +624,8 @@ img {
     background-color: #333333;
   }
   .stars {
-    -ms-flex-preferred-size: 10%;
-        flex-basis: 10%;
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
   }
   .hotel-name {
     -ms-flex-preferred-size: 100%;
