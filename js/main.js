@@ -16,7 +16,8 @@ var mySwiper = new Swiper(".swiper-container", {
 ymaps.ready(init);
 function init() {
     var myMap = new ymaps.Map("map", {
-        center: [25.07064905393, 55.140193917],
+        center: [25.078704097883328, 55.135232499999944],
         zoom: 15,
+        controls: ["zoomControl"],
     });
 }
