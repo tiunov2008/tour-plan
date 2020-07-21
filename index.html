@@ -12,19 +12,6 @@
         <link rel="stylesheet" href="css/swiper-bundle.min.css" />
         <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=11e2213f-b130-4c50-a59e-6432b6608680"></script>
         <script src="mapbasics.js"></script>
-        <style>
-            body,
-            html {
-                padding: 0;
-                margin: 0;
-                width: 100%;
-                height: 100%;
-            }
-            #map {
-                width: 100%;
-                height: 90%;
-            }
-        </style>
     </head>
     <body>
         <header class="navbar">
@@ -260,11 +247,8 @@
                             </button>
                         </div>
                         <!-- /.booking -->
-                        <div class="map">
-                            <div
-                                id="map"
-                                style="width: 100%; height: 100%;"
-                            ></div>
+                        <div class="map-wrapper">
+                            <div class="map" id="map"></div>
                         </div>
                         <!-- /.map -->
                     </div>
