@@ -55,7 +55,7 @@
         line-height: 18px
 .swiper-container
     width: 100%
-    height: 450px
+    height: 100%
     position: relative
     border-radius: 8px
     &:after
@@ -72,6 +72,7 @@
 
 .slider
     width: 728px
+    height: 450px
     &-button
         top: 50%
         transform: translateY(-50%)
@@ -168,5 +169,7 @@
 .map
     width: 347px
     height: 213px
-    background-color: #000000
+    background-color: $dark
+    overflow: hidden 
+    border-radius: 10px
 
