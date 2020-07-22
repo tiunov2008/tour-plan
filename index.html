@@ -12,6 +12,8 @@
         <link rel="stylesheet" href="css/swiper-bundle.min.css" />
         <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=11e2213f-b130-4c50-a59e-6432b6608680"></script>
         <script src="mapbasics.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="js/parallax.min.js"></script>
     </head>
     <body>
         <header class="navbar">
@@ -177,7 +179,6 @@
                                 />
                             </div>
                         </div>
-
                         <!-- If we need navigation buttons -->
                         <button
                             class="hotel-slider__button hotel-slider__button_prev"
@@ -187,72 +188,80 @@
                         ></button>
                     </div>
                     <!-- /.swiper-container -->
-                <div class="hotel-right">
-                    <div class="booking">
-                        <div class="booking__info">
-                            <div class="booking__price">
-                                <span class="booking__start"
-                                    >price starts as</span
-                                >
-                                <strong class="booking__pricetag"
-                                    >$ 8,500</strong
-                                >
-                                <span class="booking__per-room"
-                                    >per room / night</span
-                                >
-                            </div>
-                            <div class="booking__room">
-                                <div class="booking__text">
-                                    <img
-                                        src="img/user.svg"
-                                        alt="user icon"
-                                        class="booking__icon"
-                                    />
-                                    <span class="booking__description"
-                                        >2 x Guests
-                                    </span>
+                    <div class="hotel-right">
+                        <div class="booking">
+                            <div class="booking__info">
+                                <div class="booking__price">
+                                    <span class="booking__start"
+                                        >price starts as</span
+                                    >
+                                    <strong class="booking__pricetag"
+                                        >$ 8,500</strong
+                                    >
+                                    <span class="booking__per-room"
+                                        >per room / night</span
+                                    >
                                 </div>
-                                <div class="booking__text">
-                                    <img
-                                        src="img/home.svg"
-                                        alt="home icon"
-                                        class="booking__icon"
-                                    />
-                                    <span class="booking__description"
-                                        >1 x Room
-                                    </span>
+                                <div class="booking__room">
+                                    <div class="booking__text">
+                                        <img
+                                            src="img/user.svg"
+                                            alt="user icon"
+                                            class="booking__icon"
+                                        />
+                                        <span class="booking__description"
+                                            >2 x Guests
+                                        </span>
+                                    </div>
+                                    <div class="booking__text">
+                                        <img
+                                            src="img/home.svg"
+                                            alt="home icon"
+                                            class="booking__icon"
+                                        />
+                                        <span class="booking__description"
+                                            >1 x Room
+                                        </span>
+                                    </div>
                                 </div>
+                                <!-- /.booking__room -->
                             </div>
-                            <!-- /.booking__room -->
+                            <!-- /.booking-info -->
+                            <div class="booking__call-center">
+                                <span class="booking__heading"
+                                    >Quick Booking</span
+                                >
+                                <a class="booking__number" href="tel:12100"
+                                    ><img
+                                        src="img/phone-call.svg"
+                                        alt="phone-call icon"
+                                    />
+                                    <span class="booking__num">12100</span>
+                                </a>
+                            </div>
+                            <!-- /.call-center -->
+                            <button class="button booking__button">
+                                View Other Options
+                            </button>
                         </div>
-                        <!-- /.booking-info -->
-                        <div class="booking__call-center">
-                            <span class="booking__heading">Quick Booking</span>
-                            <a class="booking__number" href="tel:12100"
-                                ><img
-                                    src="img/phone-call.svg"
-                                    alt="phone-call icon"
-                                />
-                                <span class="booking__num">12100</span>
-                            </a>
+                        <!-- /.booking -->
+                        <div class="map-wrapper">
+                            <div class="map" id="map"></div>
                         </div>
-                        <!-- /.call-center -->
-                        <button class="button booking__button">
-                            View Other Options
-                        </button>
+                        <!-- /.map -->
                     </div>
-                    <!-- /.booking -->
-                    <div class="map-wrapper">
-                        <div class="map" id="map"></div>
-                    </div>
-                    <!-- /.map -->
+                    <!-- /.hotel-right -->
                 </div>
-                <!-- /.hotel-right -->
+                <!-- /.hotel-grid -->
             </div>
-            <!-- /.hotel-grid -->
+            <!-- /.container -->
         </section>
-        <!-- /.container -->
         <section class="newsletter">
+            <div
+                class="parallax-window"
+                data-parallax="scroll"
+                data-image-src="../img/newsletter-bg1.jpg"
+            ></div>
             <div class="newsletter-wrapper">
                 <h2 class="newsletter-title newsletter__title">
                     subscribe to our
@@ -302,7 +311,21 @@
                                     </div>
                                 </div>
                                 <!-- /.reviews-slider__profile -->
-                                <p class="reviews-slider__text">It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very well. Issue was only that Lift was not in working and we were allotted to 3rd floor and amenities articles were in corner of gallery which were giving bad feeling. Breakfast was good and support of the staff was also very nice. Location is not good as per atmosphere, it is very nearby most of the popular places but self location in a narrow street is not good. Overall it was a good experience and could recommend. </p>
+                                <p class="reviews-slider__text">
+                                    It was very nice hotel with cleanliness.
+                                    Staff behavior was good and polite. They
+                                    welcome us very well. Issue was only that
+                                    Lift was not in working and we were allotted
+                                    to 3rd floor and amenities articles were in
+                                    corner of gallery which were giving bad
+                                    feeling. Breakfast was good and support of
+                                    the staff was also very nice. Location is
+                                    not good as per atmosphere, it is very
+                                    nearby most of the popular places but self
+                                    location in a narrow street is not good.
+                                    Overall it was a good experience and could
+                                    recommend.
+                                </p>
                             </div>
                             <!-- /.reviews-slider__item -->
                         </div>
@@ -329,7 +352,18 @@
                                     </div>
                                 </div>
                                 <!-- /.reviews-slider__profile -->
-                                <p class="reviews-slider__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptatibus quos magnam asperiores perspiciatis, obcaecati perferendis esse tenetur nostrum? Adipisci, sint. Quaerat incidunt dolore eos suscipit, magni perspiciatis blanditiis. Magni in doloribus molestias ex voluptas ipsa, repudiandae animi eius nesciunt, nemo asperiores, illum omnis deserunt! Maxime consequatur veniam fuga nihil.</p>
+                                <p class="reviews-slider__text">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Aliquam voluptatibus quos
+                                    magnam asperiores perspiciatis, obcaecati
+                                    perferendis esse tenetur nostrum? Adipisci,
+                                    sint. Quaerat incidunt dolore eos suscipit,
+                                    magni perspiciatis blanditiis. Magni in
+                                    doloribus molestias ex voluptas ipsa,
+                                    repudiandae animi eius nesciunt, nemo
+                                    asperiores, illum omnis deserunt! Maxime
+                                    consequatur veniam fuga nihil.
+                                </p>
                             </div>
                             <!-- /.reviews-slider__item -->
                         </div>
@@ -355,7 +389,17 @@
                                     </div>
                                 </div>
                                 <!-- /.reviews-slider__profile -->
-                                <p class="reviews-slider__text">Далеко-далеко за словесными горами, в стране гласных и согласных живут рыбные тексты. Рукопись наш вопроса его своего составитель жаренные страну выйти взобравшись инициал маленький свое имени взгляд образ текстов текст, она ручеек большой подпоясал щеке запятой на берегу переписывается пустился которое что. От всех, рукопись пунктуация! Пор переписали которой то заглавных. Они, подпоясал безорфографичный!</p>
+                                <p class="reviews-slider__text">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Repellendus fugiat rem ad
+                                    ipsum aliquam ipsa consectetur sapiente
+                                    minima blanditiis totam quaerat omnis
+                                    dolorum nostrum ullam provident consequatur,
+                                    aperiam nisi atque nihil sed fuga placeat,
+                                    esse at soluta. Rem quia dicta beatae id
+                                    iure quaerat? Ullam officiis distinctio sint
+                                    consectetur expedita?
+                                </p>
                             </div>
                             <!-- /.reviews-slider__item -->
                         </div>
@@ -381,14 +425,19 @@
                                         <img src="img/star.svg" alt="star" />
                                         <img src="img/star.svg" alt="star" />
                                         <img src="img/star.svg" alt="star" />
-                                        
                                     </div>
                                 </div>
                                 <!-- /.reviews-slider__profile -->
-                                <p class="reviews-slider__text">37前セ点入無トネス資律ナムレワ示硬けい能性前ハリア雪育リヘシコ本囲ッぼず情権ツ改見クヲ台録ばぴい写台ふクじお問及シ時士策送えみゆぞ。静す永学路ヒラメケ読6事そねばよ投酸あドき戦以こ望治ほちり桜災いじぐび旨世ケツ開傑ど省特アユ尊手ク月金か有1置クぎば。生ゆずへ護50真ろるぞち論車シレフソ務明同比びひ府崎ラメ球公ちラへ惑換フゅに紙内ニア現言偽刀穂駒おレざむ。
-
-                                    一コモヒ体助ねらだ題活リネコセ森迎ぜンょ全津キイユ子3女経はふ質開ざじあ悩測イせじ後牛キワメ視置じすた式的もみかそ会均拠池助がみラ。15鮮乃隔32整訴ネルカチ市初ラメヨキ地投トヱ動研モエソス組妙育妻メヱ公清な生分う施終ラ推地本よんやつ去暮ひをイ除養ろド。送ノヲス毎健セ妊髪ねす会庫ヒ作情セエネニ犯整はンね軸出ロ眠3億はぱぼお事向言み禁監ッれ牛皇戒洗也成好ゃ。
-                                    
+                                <p class="reviews-slider__text">
+                                    Lorem, ipsum dolor sit amet consectetur
+                                    adipisicing elit. Eaque, magni saepe!
+                                    Repudiandae distinctio deleniti quibusdam
+                                    inventore reiciendis eum ipsa rerum, labore
+                                    dolores eius corrupti est quos esse ab
+                                    aspernatur, vitae iusto, voluptatem earum!
+                                    Voluptatibus fuga suscipit accusantium
+                                    tempora doloremque libero a, itaque et
+                                    dolores aliquam. Dicta itaque ut id sed.
                                 </p>
                             </div>
                             <!-- /.reviews-slider__item -->
@@ -418,15 +467,120 @@
                                     </div>
                                 </div>
                                 <!-- /.reviews-slider__profile -->
-                                <p class="reviews-slider__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus tempora temporibus accusantium perferendis necessitatibus ipsam unde, earum ratione assumenda beatae, veniam voluptatibus voluptas laboriosam nemo. Eum architecto veniam temporibus maxime a ea quibusdam, praesentium neque deleniti possimus nisi harum porro cupiditate fuga quas unde reprehenderit quis totam ipsa placeat tempore?</p>
+                                <p class="reviews-slider__text">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Minima veniam debitis
+                                    aspernatur dolores, nulla nisi dolor minus
+                                    voluptatum officiis fuga. Molestiae dolores
+                                    aut nam nesciunt, magni quis quidem ullam ex
+                                    voluptate nemo iure ea, temporibus itaque
+                                    velit eum fuga corporis. Molestias autem
+                                    mollitia sed! Facere eius neque quisquam
+                                    repellendus enim molestias fugiat assumenda.
+                                    Iure, eligendi dignissimos cum molestias qui
+                                    eos, officia nemo officiis veritatis
+                                    sapiente voluptas quibusdam architecto
+                                    tenetur fugit perferendis. Sunt aperiam
+                                    eaque illum saepe in totam quis fugit hic
+                                    praesentium repellendus voluptates quae
+                                    mollitia eveniet, nobis reprehenderit ipsum
+                                    sint iure officia voluptatum nostrum quos
+                                    maiores? Suscipit, hic qui eaque ipsum
+                                    praesentium, minima ad provident, inventore
+                                    atque recusandae repellat! Saepe veniam et
+                                    quidem, itaque odit eveniet hic, blanditiis
+                                    nulla unde rem voluptatum ut facere dolor
+                                    deleniti voluptatem earum. Distinctio
+                                    voluptate cum consequuntur odio pariatur,
+                                    doloribus esse vero tempora molestias
+                                    delectus ullam. Assumenda ab temporibus
+                                    nobis eaque porro asperiores praesentium rem
+                                    veritatis. Nesciunt ipsam ea hic natus
+                                    officia nemo eius, enim nihil excepturi
+                                    recusandae quia corporis? Molestiae officia
+                                    ipsa illo aperiam sit inventore amet
+                                    asperiores, provident aliquid possimus nisi
+                                    laudantium recusandae rerum doloremque?
+                                    Veritatis sequi repellendus quis tenetur
+                                    odit id minus incidunt alias sed impedit
+                                    velit, veniam recusandae magni, beatae ad
+                                    odio eius dolorum quisquam! Nobis itaque
+                                    saepe eum? Vero sed explicabo recusandae
+                                    quia, eum temporibus laborum numquam? Nulla
+                                    placeat corporis autem velit quibusdam iste
+                                    dolore saepe, odit sunt possimus itaque
+                                    quisquam tempora quis voluptas fugit officia
+                                    hic reprehenderit cumque magnam molestias
+                                    quaerat. Quam, quasi reiciendis? Odio, atque
+                                    ipsum sint reprehenderit praesentium porro
+                                    eos fuga est sit dicta quas iusto architecto
+                                    possimus voluptatum eius nostrum. Maiores
+                                    error consequuntur veniam! Incidunt, rem?
+                                    Rem, dignissimos distinctio quam omnis culpa
+                                    veniam molestias reprehenderit nulla cumque
+                                    asperiores debitis nemo nihil, illo harum
+                                    voluptate odit quibusdam quis quod
+                                    voluptatibus illum placeat, suscipit enim
+                                    totam! Placeat animi iusto officiis
+                                    eligendi, reprehenderit autem qui ipsa ad
+                                    nihil saepe in sunt, voluptates itaque
+                                    adipisci ullam ab vero explicabo repellat
+                                    nemo beatae. Repudiandae accusantium vero
+                                    qui, voluptates voluptatem perferendis? Quae
+                                    obcaecati labore officiis rerum facere sit
+                                    nam incidunt veritatis beatae quaerat eius
+                                    perferendis, unde iure magni cum minus
+                                    officia iusto quibusdam corporis at. Aperiam
+                                    nihil reiciendis quia omnis, labore quae
+                                    eligendi quos ratione sunt non accusamus
+                                    optio sequi dignissimos voluptatem quas
+                                    dolore itaque obcaecati tempore blanditiis
+                                    voluptatum doloremque alias. Esse aliquam
+                                    debitis tenetur, quidem saepe maxime,
+                                    excepturi quia quam possimus, ipsa expedita
+                                    ex optio ipsam cum beatae! Culpa eligendi
+                                    doloribus temporibus ratione! Officia totam
+                                    voluptate neque accusantium a. Quo veritatis
+                                    rem voluptatum dolores non, voluptate magnam
+                                    officiis enim est quas, quod quisquam
+                                    repellendus, veniam commodi sit facilis
+                                    dolorem aliquam nihil perferendis esse amet
+                                    dolore voluptates et? Veritatis a
+                                    voluptatibus odit, repellat ad atque quo
+                                    expedita nam dolorum voluptatem aliquam
+                                    harum obcaecati cum, officiis quaerat
+                                    deleniti suscipit quibusdam nihil beatae?
+                                    Odio atque, facere commodi, soluta optio,
+                                    animi voluptas omnis quo suscipit eaque
+                                    corrupti sint. Aliquid, harum sequi! Nam
+                                    quibusdam ipsum quis corrupti dolore dolores
+                                    mollitia veritatis quod nemo voluptatibus
+                                    perspiciatis similique animi neque, autem id
+                                    sunt excepturi magni et distinctio.Lorem
+                                    ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Possimus tempora
+                                    temporibus accusantium perferendis
+                                    necessitatibus ipsam unde, earum ratione
+                                    assumenda beatae, veniam voluptatibus
+                                    voluptas laboriosam nemo. Eum architecto
+                                    veniam temporibus maxime a ea quibusdam,
+                                    praesentium neque deleniti possimus nisi
+                                    harum porro cupiditate fuga quas unde
+                                    reprehenderit quis totam ipsa placeat
+                                    tempore?
+                                </p>
                             </div>
                             <!-- /.reviews-slider__item -->
                         </div>
                         <!-- /.swiper-slide -->
                     </div>
                     <!-- /.swiper-wrapper -->
-                    <button class="reviews-slider__button reviews-slider__button_prev"></button>
-                    <button class="reviews-slider__button reviews-slider__button_next"></button>
+                    <button
+                        class="reviews-slider__button reviews-slider__button_prev"
+                    ></button>
+                    <button
+                        class="reviews-slider__button reviews-slider__button_next"
+                    ></button>
                 </div>
                 <!-- /.reviews-slider -->
             </div>

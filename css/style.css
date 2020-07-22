@@ -704,10 +704,7 @@ img {
 .newsletter {
   position: relative;
   padding: 98px 0 87px 0;
-  background-image: url(../img/newsletter-bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  margin-top: 70px;
 }
 
 .newsletter:before {
@@ -783,6 +780,16 @@ img {
   color: #ffffff;
   border-radius: 0 4px 4px 0;
   overflow: hidden;
+}
+
+.parallax-window {
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  min-height: 260px;
+  background: transparent;
 }
 
 .breadcrump-list {
@@ -921,17 +928,20 @@ img {
 .reviews-slider__text {
   margin: auto;
   max-width: 537px;
+  max-height: 120px;
   font-weight: normal;
   font-size: 12px;
   line-height: 160%;
   text-align: justify;
+  overflow-y: auto;
+  z-index: 10;
 }
 
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
   }
-  .swiper-slide__image {
+  .hotel-slider__image {
     height: 100%;
     width: 100%;
     object-fit: cover;
