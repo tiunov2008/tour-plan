@@ -549,7 +549,7 @@ img {
   background-image: url(../img/arrow-next.svg);
 }
 
-.hotel-slider__button_next_prev {
+.hotel-slider__button_prev {
   left: 18px;
   background-image: url(../img/arrow-prev.svg);
 }
