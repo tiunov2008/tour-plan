@@ -1,5 +1,4 @@
 .newsletter
-    margin-top: 70px
     position: relative
     padding: 98px 0 87px 0
     background-image: url(../img/newsletter-bg.jpg)
@@ -51,13 +50,20 @@
         line-height: 18px
         border-radius: 4px
     &__button
+        padding: 0 5px 0 5px
+        width: 15%
         position: absolute
         min-width: 65px
         right: 0
         top: 0
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        align-items: center
         height: 100%
         border: none
         background-color: $primary
         color: $light
         border-radius: 0 4px 4px 0
+        overflow: hidden
 
