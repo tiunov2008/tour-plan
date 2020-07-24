@@ -1182,6 +1182,9 @@ img {
     transform: translate(50%, 0);
     right: 50%;
   }
+  .reviews-slider__text {
+    max-width: 455px;
+  }
   .activities {
     padding: 40px 0 60px 0;
   }
@@ -1216,6 +1219,13 @@ img {
     font-weight: 600;
     font-size: 30px;
     line-height: 38px;
+  }
+  .reviews-slider__item {
+    height: 438px;
+  }
+  .reviews-slider__text {
+    max-width: 219px;
+    max-height: 266px;
   }
   .reviews__title {
     font-size: 18px;
