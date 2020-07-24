@@ -942,6 +942,80 @@ img {
   z-index: 10;
 }
 
+.activities {
+  padding: 60px 0 98px 0;
+}
+
+.activities__title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin-bottom: 57px;
+}
+
+.activities-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 255px;
+  height: 255px;
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+  padding: 24px 26px;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: -1;
+  background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
+}
+
+.card__image {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: -2;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.card__title {
+  margin-top: auto;
+  color: #ffffff;
+  margin-bottom: 18px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.card__button {
+  padding: 7px 22px;
+  border: none;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+  background-color: #EC1F46;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -953,6 +1027,10 @@ img {
   }
   .hotel-slider {
     width: 590px;
+  }
+  .card {
+    height: 230px;
+    width: 230px;
   }
 }
 
@@ -1001,6 +1079,16 @@ img {
   }
   .reviews-slider__item {
     max-width: 580px;
+  }
+  .activities-wrapper {
+    flex-wrap: wrap;
+  }
+  .activities__card {
+    margin-bottom: 20px;
+  }
+  .card {
+    width: 340px;
+    height: 230px;
   }
 }
 
@@ -1094,6 +1182,13 @@ img {
     transform: translate(50%, 0);
     right: 50%;
   }
+  .activities {
+    padding: 40px 0 60px 0;
+  }
+  .card {
+    width: 49%;
+    height: 255px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1127,6 +1222,9 @@ img {
     line-height: 23px;
   }
   .subscribe {
+    width: 100%;
+  }
+  .card {
     width: 100%;
   }
 }
