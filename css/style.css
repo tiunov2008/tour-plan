@@ -1139,11 +1139,12 @@ img {
 .footer__message {
   background-color: #fff;
   border-radius: 4px;
-  padding: 18px 23px;
+  padding: 18px 0 0 23px;
   border: none;
   flex-basis: 100%;
   margin-bottom: 23px;
   height: 123px;
+  resize: none;
 }
 
 .footer__button {
@@ -1188,8 +1189,9 @@ img {
 .footer__links {
   padding-left: 0;
   display: grid;
-  grid-template: 1fr/minmax(125px, 1fr) minmax(125px, 1fr) minmax(125px, 1fr);
+  grid-template: 1fr / 58px 96px 120px;
   list-style: none;
+  grid-gap: 10px;
 }
 
 .footer__credit-cards {
@@ -1332,7 +1334,6 @@ img {
   }
   .footer__contact-form {
     grid-column: span 5;
-    grid-row: 4px;
   }
   .footer__bottom {
     grid-column: 1 / 6;
@@ -1500,9 +1501,6 @@ img {
   .footer__rightside {
     justify-content: flex-start;
   }
-  .footer__credit-cards {
-    max-width: 300px;
-  }
 }
 
 @media (max-width: 576px) {
@@ -1548,7 +1546,7 @@ img {
   .card {
     width: 100%;
   }
-  .footer__wrapper {
+  .footer-wrapper {
     grid-template-columns: 1fr;
     grid-row-gap: 30px;
   }
@@ -1615,8 +1613,5 @@ img {
   }
   .footer__bottom-rightside {
     justify-content: flex-start;
-  }
-  .footer__links {
-    grid-template: 1fr/minmax(50px, 100px) minmax(50px, 110px) minmax(50px, 125px);
   }
 }
