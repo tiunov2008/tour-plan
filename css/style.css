@@ -1355,6 +1355,9 @@ img {
   .navbar__search_mobile_visible, .navbar__user_mobile_visible {
     display: flex;
   }
+  .navbar__search_mobile_visible {
+    width: 80%;
+  }
   .navbar__user {
     flex-direction: column;
     justify-content: center;
