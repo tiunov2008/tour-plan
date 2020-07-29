@@ -1030,7 +1030,7 @@ img {
   display: grid;
   grid-template-columns: repeat(4, minmax(min-content, 1fr));
   grid-row-gap: 20px;
-  grid-auto-rows: minmax(83px, min-content);
+  grid-auto-rows: minmax(40px, min-content);
   align-items: start;
 }
 
