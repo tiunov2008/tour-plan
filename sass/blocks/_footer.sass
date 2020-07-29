@@ -82,7 +82,7 @@
     &__message
         background-color: #fff
         border-radius: 4px
-        padding: 18px 0 0 23px 
+        padding: 18px 23px 
         border: none
         flex-basis: 100%
         margin-bottom: 23px
@@ -120,12 +120,12 @@
     &__links
         padding-left: 0
         display: grid
-        grid-template: 1fr / 58px 96px 120px
+        grid-template: 1fr / repeat(3, max-content)
         list-style: none
         grid-gap: 10px
     &__credit-cards
         display: grid
-        grid-template: 1fr / minmax(15px, 1fr) minmax(15px, 1fr) minmax(15px, 1fr) minmax(15px, 1fr) minmax(15px, 1fr)
+        grid-template: 1fr / repeat(5,minmax(15px, 1fr))
         list-style: none
         min-width: 120px
         padding-left: 0
