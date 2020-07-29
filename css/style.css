@@ -1044,11 +1044,17 @@ img {
   grid-row: 1 / 4;
 }
 
-.footer__social__links {
+.footer__social-links {
   display: flex;
   align-items: center;
   min-width: 40px;
   justify-content: space-between;
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer__social-link {
+  margin-right: 10px;
 }
 
 .footer__social-network {
