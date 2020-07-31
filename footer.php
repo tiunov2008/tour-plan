@@ -137,7 +137,7 @@
                 </form>
             </div>
             <a href="#" class="modal__close">
-            <img src="img/close.svg" alt="icon: close" srcset="">
+            <img src="img/close.svg" alt="icon: close">
             </a>
             </div>
             <!-- /.modal__dialog -->
@@ -160,7 +160,7 @@
                 </form>
             </div>
             <a href="#" class="modal__close">
-            <img src="img/close.svg" alt="icon: close" srcset="">
+            <img src="img/close.svg" alt="icon: close">
             </a>
             </div>
             <!-- /.modal__dialog -->
