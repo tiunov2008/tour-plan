@@ -1614,6 +1614,7 @@ img {
     justify-content: flex-start;
   }
   .modal__dialog {
+    width: 90%;
     padding: 15px 55px;
   }
 }
