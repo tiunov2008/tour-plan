@@ -14,16 +14,8 @@
         <script src="mapbasics.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="js/parallax.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-        <!-- jQuery Modal -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     </head>
     <body>
-        <div id="ex1" class="modal">
-            <p>Thanks for clicking. That felt good.</p>
-        </div>
-        <!-- Link to open the modal -->
         <header class="navbar navbar_mobile_fixed">
             <div class="container">
                 <div class="navbar-top">

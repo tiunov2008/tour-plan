@@ -24,7 +24,7 @@
                             + Child Stays Free
                         </p>
                     </div>
-                    <div class="rating hotel-info__rating">
+                    <div class="rating hotel-info__rating" data-toggle="modal" data-href="#rating-modal">
                         <span class="rating__text">User Rattings</span>
                         <span class="rating__counter">4.5/5</span>
                     </div>
@@ -133,7 +133,7 @@
                                 </a>
                             </div>
                             <!-- /.call-center -->
-                            <button class="button booking__button">
+                            <button data-toggle="modal" data-href="#booking-modal" class="button booking__button">
                                 View Other Options
                             </button>
                         </div>
@@ -538,3 +538,4 @@
             </div>
         </section>
         <?php include("footer.php") ?>
+        

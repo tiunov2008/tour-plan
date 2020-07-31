@@ -93,7 +93,7 @@
                         <form action="send.php" method="POST" class="footer__form">
                             <input type="text" name="name" class="input footer__input" placeholder="Your Full Name*">
                             <input type="tel" name="phone" class="input footer__input" placeholder="Phone Number*">
-                            <textarea name="message" class="footer__message" placeholder="Message"></textarea>
+                            <textarea name="message" class="footer__message message" placeholder="Message"></textarea>
                             <button class="button footer__button">Send</button>
                             <span class="footer__required">* Required Fields</span>
                         </form>
@@ -120,6 +120,53 @@
                 </div>
             </div>
         </footer>
+        <div class="modal" id="booking-modal">
+            <div class="modal__overlay"></div>
+            <!-- /.modal__overlay -->
+            <div class="modal__dialog">
+            
+            <div class="modal__contact-form">
+                <h3 class="modal__title ">Booking</h3>
+                <form  class="modal__form">
+                    <input type="text" name="name" class="input modal__input" placeholder="Your Full Name*">
+                    <input type="tel" name="phone" class="input modal__input" placeholder="Phone Number*">
+                    <input type="email" name="email" class="input modal__input" placeholder="Email*">
+                    <textarea  name="message" class="modal__message message" placeholder="Message"></textarea>
+                    <button class="button modal__button">Send</button>
+                    <span class="modal__required">* Required Fields</span>
+                </form>
+            </div>
+            <a href="#" class="modal__close">
+            <img src="img/close.svg" alt="icon: close" srcset="">
+            </a>
+            </div>
+            <!-- /.modal__dialog -->
+        </div>
+        <!-- /.modal -->
+        <div class="modal" id="rating-modal">
+            <div class="modal__overlay"></div>
+            <!-- /.modal__overlay -->
+            <div class="modal__dialog">
+            
+            <div class="modal__contact-form">
+                <h3 class="modal__title ">Send us a Feedback</h3>
+                <form class="modal__form">
+                    <input type="text" name="name" class="input modal__input" placeholder="Your Full Name*">
+                    <input type="tel" name="phone" class="input modal__input" placeholder="Phone Number*">
+                    <input type="email" name="email" class="input modal__input" placeholder="Email*">
+                    <textarea  name="message" class="modal__message message" placeholder="Message"></textarea>
+                    <button class="button modal__button">Send</button>
+                    <span class="modal__required">* Required Fields</span>
+                </form>
+            </div>
+            <a href="#" class="modal__close">
+            <img src="img/close.svg" alt="icon: close" srcset="">
+            </a>
+            </div>
+            <!-- /.modal__dialog -->
+        </div>
+        <!-- /.modal -->
+        <script src="js/jquery-3.5.1.min.js"></script>
         <script src="js/swiper-bundle.min.js"></script>
         <script src="js/main.js"></script>
     </body>
