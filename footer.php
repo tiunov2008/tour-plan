@@ -128,9 +128,8 @@
             <div class="modal__contact-form">
                 <h3 class="modal__title ">Booking</h3>
                 <form  class="modal__form">
-                    <input type="text" name="name" class="input modal__input" placeholder="Your Full Name*">
-                    <input type="tel" name="phone" class="input modal__input" placeholder="Phone Number*">
-                    <input type="email" name="email" class="input modal__input" placeholder="Email*">
+                    <input type="tel" name="phone" class="input modal__input" placeholder="Phone Number*" required minlength>
+                    <input type="email" name="email" class="input modal__input" placeholder="Email*" required>
                     <textarea  name="message" class="modal__message message" placeholder="Message"></textarea>
                     <button class="button modal__button">Send</button>
                     <span class="modal__required">* Required Fields</span>
