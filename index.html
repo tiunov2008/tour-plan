@@ -14,6 +14,7 @@
         <script src="mapbasics.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="js/parallax.min.js"></script>
+        <link rel="stylesheet" href="css/aos.css" />
     </head>
     <body>
         <header class="navbar navbar_mobile_fixed">
@@ -109,9 +110,7 @@
                             <a href="#" class="navbar-menu__link">Hotel</a>
                         </li>
                         <li class="navbar-menu__item">
-                            <a href="activities.php" class="navbar-menu__link"
-                                >Activities</a
-                            >
+                            <a href="#" class="navbar-menu__link">Activities</a>
                         </li>
                         <li class="navbar-menu__item">
                             <a href="#" class="navbar-menu__link"
@@ -119,7 +118,7 @@
                             >
                         </li>
                         <li class="navbar-menu__item">
-                            <a href="restaurants.php" class="navbar-menu__link"
+                            <a href="#" class="navbar-menu__link"
                                 >Restaurants</a
                             >
                         </li>
@@ -180,6 +179,8 @@
                         class="rating hotel-info__rating"
                         data-toggle="modal"
                         data-href="#rating-modal"
+                        data-aos="fade-left"
+                        data-aos-delay="100"
                     >
                         <span class="rating__text">User Rattings</span>
                         <span class="rating__counter">4.5/5</span>
@@ -316,7 +317,11 @@
                 data-image-src="./img/newsletter-bg.jpg"
             ></div>
             <div class="newsletter-wrapper">
-                <h2 class="newsletter-title newsletter__title">
+                <h2
+                    class="newsletter-title newsletter__title"
+                    data-aos="fade-right"
+                    data-aos-delay="100"
+                >
                     subscribe to our
                     <span class="newsletter-title__strong">Newsletter</span>
                 </h2>
@@ -332,8 +337,14 @@
                         class="subscribe__input"
                         placeholder="Your email address"
                         required
+                        data-aos="fade-left"
+                        data-aos-delay="300"
                     />
-                    <button class="subscribe__button">
+                    <button
+                        class="subscribe__button"
+                        data-aos="fade-left"
+                        data-aos-delay="300"
+                    >
                         Send
                     </button>
                 </form>
@@ -345,7 +356,12 @@
         <section class="reviews">
             <div class="container">
                 <h2 class="reviews__title">What people thinks about us</h2>
-                <div class="swiper-container reviews-slider">
+                <div
+                    class="swiper-container reviews-slider"
+                    data-aos="zoom"
+                    data-aos-delay="100"
+                    data-aos-duration="700"
+                >
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="reviews-slider__item">
@@ -648,7 +664,11 @@
             <div class="container">
                 <h2 class="activities__title">Other activities</h2>
                 <div class="activities-wrapper">
-                    <div class="card activities__card">
+                    <div
+                        class="card activities__card"
+                        data-aos="fade-up"
+                        data-aos-delay="100"
+                    >
                         <img
                             src="img/activity-1.jpg"
                             alt="The curious corner 
@@ -661,7 +681,11 @@
                         <button class="card__button">Book Now</button>
                     </div>
                     <!-- /.card -->
-                    <div class="card activities__card">
+                    <div
+                        class="card activities__card"
+                        data-aos="fade-up"
+                        data-aos-delay="300"
+                    >
                         <img
                             src="img/activity-2.jpg"
                             alt="Gymkhana club golf
@@ -672,7 +696,11 @@
                         <button class="card__button">Book Now</button>
                     </div>
                     <!-- /.card -->
-                    <div class="card activities__card">
+                    <div
+                        class="card activities__card"
+                        data-aos="fade-up"
+                        data-aos-delay="500"
+                    >
                         <img
                             src="img/activity-3.jpg"
                             alt="Tamarind falls hiking
@@ -685,7 +713,11 @@
                         <button class="card__button">Book Now</button>
                     </div>
                     <!-- /.card -->
-                    <div class="card activities__card">
+                    <div
+                        class="card activities__card"
+                        data-aos="fade-up"
+                        data-aos-delay="700"
+                    >
                         <img
                             src="img/activity-4.jpg"
                             alt="The blue marine discovery
@@ -1073,6 +1105,7 @@
         <script src="js/swiper-bundle.min.js"></script>
         <script src="js/jquery.validate.min.js "></script>
         <script src="js/jquery.mask.min.js "></script>
+        <script src="js/aos.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>
